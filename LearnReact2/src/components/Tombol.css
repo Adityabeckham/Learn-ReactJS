@@ -1,0 +1,13 @@
+.tombol-utama {
+  background-color: #646cff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tombol-utama:hover {
+  background-color: #747bff;
+}

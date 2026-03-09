@@ -1,0 +1,266 @@
+/* ========== App layout ========== */
+.app {
+  text-align: center;
+}
+
+.app-header {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.app-logos {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.logo {
+  height: 4em;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 0.25s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em var(--accent));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em #61dafbaa);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.app-title {
+  margin-bottom: var(--space-md);
+  font-size: 1.75rem;
+}
+
+.btn-primary {
+  background: var(--accent) !important;
+  color: white !important;
+  border-color: var(--accent) !important;
+}
+.btn-primary:hover {
+  background: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.app-hint {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+}
+
+.app-footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border);
+}
+.app-footer p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* ========== Sections (cards) ========== */
+.section {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+.section > h1,
+.section > h2 {
+  margin-top: 0;
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+  font-size: 1.15rem;
+}
+
+/* Profile, Identitas, generic content */
+.section p {
+  margin-bottom: var(--space-xs);
+}
+
+/* ProductCard */
+.section--product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+}
+.section--product h3 {
+  margin-bottom: var(--space-xs);
+}
+
+/* TodoList */
+.section input[type="text"] {
+  width: 100%;
+  max-width: 320px;
+  margin-right: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+.section button {
+  margin-right: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0 0 0;
+}
+.section ul li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border);
+}
+.section ul li:last-child {
+  border-bottom: none;
+}
+.section ul li span {
+  flex: 1;
+  cursor: pointer;
+}
+.section ul li span[style*="line-through"] {
+  color: var(--text-muted);
+}
+
+/* Counter */
+.section p + button {
+  margin-right: var(--space-sm);
+}
+
+/* ========== Tugas Mandiri - Kartu Kontak ========== */
+.section--contact {
+  text-align: center;
+}
+
+.contact-intro {
+  margin-bottom: var(--space-lg);
+}
+.contact-intro h1 {
+  margin-bottom: var(--space-xs);
+}
+.contact-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.contact-list h2 {
+  border: none;
+  padding: 0;
+  margin-bottom: var(--space-md);
+  font-size: 1.25rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+.contact-form input {
+  min-width: 140px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.contact-form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.contact-form button {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+.contact-form button:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: center;
+}
+
+.contact-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  min-width: 200px;
+  max-width: 240px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.contact-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.contact-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto var(--space-md);
+  display: block;
+  border: 2px solid var(--border);
+}
+
+.contact-name {
+  margin: 0 0 var(--space-xs);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-phone,
+.contact-email {
+  margin: var(--space-xs) 0;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.contact-btn-hubungi {
+  margin-top: var(--space-md);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+.contact-btn-hubungi:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+/* Override h2 in sections for contact (no aliceblue) */
+.section--contact .contact-list h2 {
+  background: transparent;
+}

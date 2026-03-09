@@ -1,0 +1,17 @@
+.tema-terang {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.tema-gelap {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
