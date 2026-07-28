@@ -15,7 +15,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #F3F4F6;
+    background-color: #c2cbdd;
 }
 
 main {
@@ -35,7 +35,7 @@ main img {
     padding: 32px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: auto;
 }
 
@@ -71,7 +71,7 @@ main img {
     bottom: -100px;
     opacity: 0;
     text-transform: capitalize;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
     transition: bottom ease-in-out 0.3s, opacity ease-in-out 0.3s;

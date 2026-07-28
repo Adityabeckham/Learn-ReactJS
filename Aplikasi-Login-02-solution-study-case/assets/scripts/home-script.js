@@ -9,6 +9,6 @@
 /* TODO : Menambahkan fungsionalitas tombol logout */
 const buttonLogoutElement = document.querySelector('#buttonLogout');
 
-buttonLogoutElement.addEventListener('click', function() {
-  
+buttonLogoutElement.addEventListener('click', function () {
+    goToLogin();
 });
