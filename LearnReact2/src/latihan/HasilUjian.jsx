@@ -28,9 +28,11 @@ export default function LatihanHasilUjian() {
     return (
         <div className="glass-panel" style={{ marginBottom: '20px', padding: '20px' }}>
             <h2 style={{ marginTop: 0 }}>Latihan 2: Hasil Ujian</h2>
-            <HasilUjian nilai={55} />
-            <HasilUjian nilai={75} />
-            <HasilUjian nilai={90} />
+            <HasilUjian nilai={100} />
+            <HasilUjian nilai={85} />
+            <HasilUjian nilai={79} />
+            <HasilUjian nilai={60} />
+            <HasilUjian nilai={59} />
         </div>
     );
 }
