@@ -33,6 +33,7 @@ export default function LatihanHasilUjian() {
             <HasilUjian nilai={79} />
             <HasilUjian nilai={60} />
             <HasilUjian nilai={59} />
+            <HasilUjian nilai={0} />
         </div>
     );
 }
